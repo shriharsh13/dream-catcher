@@ -1,6 +1,7 @@
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import pool from './config/database.js';
 import helmet from 'helmet'
 import { initDatabase } from './config/database-init.js';
 import dreamsRouter from './routes/dreams.js';
